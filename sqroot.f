@@ -1,9 +1,9 @@
 PROGRAM sqroot
 
-    REAL :: sum 
-    integer:: i
+    REAL :: sum = 0
+    REAL:: i
     do 100 i = 1, 10
-        sum = SQRT(sum)
+        sum = sum + SQRT(i)
         
     100 CONTINUE
 WRITE(*,*) sum
